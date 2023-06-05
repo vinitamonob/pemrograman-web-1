@@ -14,7 +14,7 @@
  
 	<?php
 	include 'koneksi.php';
-	$id = $_GET['id'];
+	$id = $_GET['nim'];
 	$data = mysqli_query($koneksi,"select * from mahasiswa where nim='$id'");
 	while($d = mysqli_fetch_array($data)){
 		?>

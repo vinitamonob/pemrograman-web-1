@@ -3,7 +3,7 @@
 include 'koneksi.php';
  
 // menangkap data id yang di kirim dari url
-$id = $_GET['id'];
+$id = $_GET['nim'];
  
  
 // menghapus data dari database
