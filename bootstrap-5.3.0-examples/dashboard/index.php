@@ -280,8 +280,8 @@
                 <td><?php echo $d['nim']; ?></td>
                 <td><?php echo $d['alamat']; ?></td>
                 <td>
-                  <a class="btn btn-primary" href="edit.php">Edit</a>
-                  <a class="btn btn-danger" href="hapus.php">Hapus</a>
+                  <a class="btn btn-primary" href="edit.php?nim=<?php echo $d['nim']; ?>">Edit</a>
+                  <a class="btn btn-danger" href="hapus.php?nim=<?php echo $d['nim']; ?>">Hapus</a>
                 </td>
               </tr>
               <?php

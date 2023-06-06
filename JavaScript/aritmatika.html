@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Belajar Javascript Part 4 : Operator Aritmatika Pada Javascript</title>
+	</head>
+	<body>
+		<h1>Belajar Javascript Part 4 <br/> Operator Aritmatika Pada Javascript</h1>
+		<h2>www.malasngoding.com</h2>
+ 
+		Bilangan 1 = <input type="text" name="" id="bil_1"><br>			
+		Bilangan 2 = <input type="text" name="" id="bil_2" onchange=""><br>
+		<button onclick="tampilkan_hasil()">Hitung</button><br>
+		Hasil = <input type="text" name="" id="hasil"><br>
+		<!-- <div id="penjumlahan"></div> -->
+		
+		<script>
+			function tampilkan_hasil(){
+				var bilangan1 = document.getElementById("bil_1").value;
+				var bilangan2 = document.getElementById("bil_2").value;
+				
+				var penjumlahan = parseInt(bilangan1) + parseInt(bilangan2);				
+				
+				// document.getElementById("penjumlahan").innerHTML = penjumlahan;			
+				document.getElementById("hasil").value = penjumlahan;
+			}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Teknosata Mart</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Nama Barang</td>
+            <td><select name="" id="nama" onchange="tampilkan_harga()">
+                <option value="Kopi ABC">Kopi ABC</option>
+                <option value="Gulaku">Gulaku</option>
+                <option value="Teh Poci">Teh Poci</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td><input type="text" name="" id="harga"></td>
+        </tr>
+    </table>
+    <!-- <script>
+        var nama=document.querySelector('#nama');
+        var harga_barang=document.querySelector('#harga');
+
+        nama.addEventListener('change', function(){
+            var selectedOption=this.options[nama.selectedIndex];
+
+            if (selectedOption.value == 'Kopi ABC'){
+                harga_barang.value = 2000;
+            } else if (selectedOption.value == 'Gulaku'){
+                harga_barang.value = 5000;
+            } else if (selectedOption.value == 'Teh Poci'){
+                harga_barang.value = 3000;
+            }
+        });
+    </script> -->
+    <script>
+        function tampilkan_harga(){
+            nama_barang=document.getElementById('nama').value;
+            var harga_barang;
+            if (nama_barang == 'Kopi ABC'){
+                harga_barang = 2000;
+            } else if (nama_barang == 'Gulaku'){
+                harga_barang = 5000;
+            } else if (nama_barang == 'Teh Poci'){
+                harga_barang = 3000;
+            }
+
+            document.getElementById("harga").value = harga_barang;
+        };
+    </script>
+    <button onclick="myFunction()">Check Out</button>
+</body>
+</html>
